@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9D5DA;
+}
+
+main {
+    width: 100%;
+    
+}
+
+
+.container {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #827397;
+    padding: 1em;
+}
+
+.form-image img {
+    width: 40em;
+}
+
+.form-group {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.form-header {
+    padding: 1em;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtmit-button {
+    display: flex;
+    align-items: center;
+}
+
+.subtmit-button button {
+    border: none;
+    background-color: #4D4C7D;
+    padding: 0.6em 2em;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.subtmit-button button:hover {
+    background-color: #363062;
+}
+
+.subtmit-button a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;    
+}  
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 3.3em;
+    height: 0.15em;
+    background-color: #4D4C7D;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 0em;
+}
+
+.input-group-box {
+    display: flex;
+    flex-direction: column;
+    margin: em;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.6em;
+    padding: 0 0.5em;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input {
+    margin-right: 0.35em;
+}
+
+.gender-input label {
+    font-size: 0.80em;
+    font-weight: 600;
+}
+
+.race-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.6em;
+    padding: 0 0.5em;
+}
+
+.race-input {
+    display: flex;
+    align-items: center;
+}
+
+.race-input input {
+    margin-right: 0.35em;
+}
+
+.race-input label {
+    font-size: 0.80em;
+    font-weight: 600;
+}
+
+.lic-button  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7em;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    outline: none;
+    font-size: 1em;
+    padding: 25px 50px 10px;
+    font-weight: 600;
+}
+
+.input:focus {
+    background-color: whitesmoke;
+    border: 2px solid black;
+}
+
+.login_label span {
+    position: absolute;
+    font-size: 0.5em;
+    font-weight: 300;
+    margin: 20px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+
+.login_label .span-active {
+    font-size: 0.4em;
+    margin: 8px 10px;
+}
+
+
+.login_label--checkbox {
+    width: 100%;
+    margin: 15px 0 50px;
+    font-size: 0.4em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.input--checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #363062;
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.input--checkbox:checked::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: 3px solid white;        
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}

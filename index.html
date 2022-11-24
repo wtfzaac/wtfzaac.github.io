@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="validate.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Formulário</title>
+</head>
+<body>
+
+<div>
+    <div class="container">
+        <div class="form-image">
+            <img src="logo.png">
+        </div>
+    <div class="form-group">
+        <form action="#" method="post">
+            <div class="form-header">
+                <div class="form-title">
+                    <h1>Formulário de Admissão</h1>
+                </div>
+                <div class="subtmit-button">
+                    <button type="submit" name="submit"><a href="#">Enviar</a></button>
+                </div>
+            </div>
+                <div class="input-group">
+                    <div class="input-group-box">
+                        <label for="name" class="login_label">
+                            <span>Nome Completo*:</span>
+                            <input type="text" name="name" id="nome" class="input" pattern="[a-z\s]+$" required>
+                        </label>
+                    </div>
+
+                    <div class="input-group-box">
+                        <label for="email" class="login_label">
+                            <span>Email*:</span>
+                            <input type="email" name="email" id="email" class="input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                        </label>
+                    </div>
+
+                    <div class="input-group-box">
+                        <label for="tel" class="login_label">
+                            <span>Telefone*:</span>
+                            <input type="text" name="tel" id="tel" class="input" minlength="15" maxlength="15" pattern="[0-9]+$" required>
+                    </label>
+                    </div>
+
+                    <div class="input-group-box">
+                        <label for="cpf" class="login_label">
+                            <span>CPF*:</span>
+                            <input type="text" name="cpf" id="cpf" class="input" minlength="14" maxlength="14" pattern="[0-9]+$" required>
+                    </label>
+                    </div>
+
+                    <div class="input-group-box">
+                        <label for="rg" class="login_label">
+                            <span>RG*:</span>
+                            <input type="text" name="rg" id="rg" class="input" minlength="12" maxlength="12" pattern="[0-9]+$" required>
+                    </label>
+                    </div>
+
+                    <div class="input-group-box">
+                        <label for="senha" class="login_label">
+                            <span>Senha*:</span>
+                            <input type="password" name="pwd" id="pwd" class="input" minlength="8" required>
+                    </label>
+                    </div>
+
+                    <div class="input-group-box">
+                        <label for="confirma-senha" class="login_label">
+                            <span>Confirmar Senha*:</span>
+                            <input type="password" name="pwd2" id="pwd2" class="input" minlength="8" required>
+                    </label>
+                    </div>
+                </div>
+
+                <div class="option-group" >
+                     <label class="cursos">
+                            <span>Cursos:</span>
+                                <select name="curso" required>
+                                    <option value="ads">Analise e Desenvolvimento de Sistemas</option>
+                                    <option value="art">Artes Visuais</option>
+                                    <option value="bio">Biomedicina</option>
+                                    <option value="engq">Engenharia Química</option>
+                                    <option value="engs">Engenharia de Software</option>
+                                </select>
+                        </label>
+                        <label class="turno">
+                                <span>Turno:</span>
+                                <select name="turno" required>
+                                    <option value="mat">Matutino</option>
+                                    <option value="vesp">Vespertino</option>
+                                    <option value="not">Noturno</option>
+                                </select>
+                        </label> 
+                        <label class="cidade">
+                                <span>Cidade:</span>
+                                <select name="cidade" required>
+                                    <option value="mat">Araquari</option>
+                                    <option value="mat">Florianopolis</option>
+                                    <option value="vesp">Jaragua do Sul</option>
+                                    <option value="not">Joinville</option>
+                                </select>
+                        </label>
+                </div>
+
+                <div class="gender-input">
+                    <div class="gender-title">
+                        <span>Gênero</span>
+                    </div>
+
+                    <div class="gender-group" required>
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="masc">
+                            <span>Masculino</span>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="fem">
+                            <span>Feminino</span>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" name="gender" id="out">
+                            <span>Outro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="race-input">
+                    <div class="race-title">
+                        <span>Raça:</span>
+                    </div>
+
+                    <div class="race-group" required>
+                        <div class="race-input">
+                            <input type="radio" name="gender" id="white">
+                            <span>Branco</span>
+                        </div>
+                        <div class="race-input">
+                            <input type="radio" name="gender" id="black">
+                            <span>Negro</span>
+                        </div>
+                        <div class="race-input">
+                            <input type="radio" name="gender" id="brown">
+                            <span>Pardo</span>
+                        </div>
+                        <div class="race-input">
+                            <input type="radio" name="gender" id="yellow">
+                            <span>Amarelo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lic-button">
+                    <label for="lic"> 
+                        <span>Aceito os Termos de Uso e política de privacidade</span>
+                        <input type="checkbox" name="lic" id="lic" class="input--checkbox" required> 
+                   </label>  
+                </div>
+        </form>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+    <!-- <div class="container">
+        <form action="#" method="POST" class="form_cad"></form>
+        <div class="wrapper">
+            <img src="logo.png"  class="logo">
+    <h1 class ="title_form">Formulário de Admissão</h1>
+        <h1 class ="title_dados">Dados Pessoais do Estudante</h1>
+     <div class="div1">
+            <label for="name" class="login_label">
+                <span>Nome Completo*:</span> 
+                <input type ="text" name ="name" id="nome" class="input"> 
+            </label>
+                
+            <label for="email" class="login_label">
+                <span>Email*:</span> 
+                <input type ="text" name ="email" id="email" class="input"> 
+            </label>
+            <label for="tel" class="login_label">
+                <span>Telefone*:</span> 
+                <input type ="text" name ="tel" id="tel" class="input"> 
+            </label>
+            <label for="cpf" class="login_label">
+                <span>CPF*::</span> 
+                <input type ="text" name ="cpf" id="cpf" class="input"> 
+            </label>
+           <label for="gen" class="genero">
+                <span>Gênero:</span>
+                <label> Masculino
+                    <input type="radio" name="gen" value="masc" id="masc" class="input">
+                </label>
+                </label>
+                <label> Feminino
+                    <input type="radio" name="gen" value="fem" id="fem" class="input">
+                </label>
+                <label> Outro
+                    <input type="radio" name="gen" value="out" id="out" class="input">
+                </label>
+            <label for="et" class="etnia">
+                <span>Etnia</span> 
+                <label> Branco
+                    <input type="radio" name="et" value="white" id="white" class="input">
+                </label>
+                <label> Pardo
+                    <input type="radio" name="et" value="brown" id="brown" class="input">
+                </label>
+                <label> Amarelo
+                    <input type="radio" name="et" value="yellow" id="yellow" class="input">
+                </label>
+                <label> Preto
+                    <input type="radio" name="et" value="black" id="black" class="input">
+                </label>
+            </label>
+            
+            <label for="date" class="date">
+                <span>Data de Nascimento</span>
+                <input type ="date" name ="date" id ="date" class="input">
+            </label>             
+        
+    </div>
+        <h1 class="title_curso"> Dados do Curso </h1>
+       
+    <div class="div2">
+    <label class="cursos">
+        <span>Cursos:</span>
+        <select name="curso">
+            <option value="ads">Analise e Desenvolvimento de Sistemas</option>
+            <option value="art">Artes Visuais</option>
+            <option value="bio">Biomedicina</option>
+            <option value="engq">Engenharia Química</option>
+            <option value="engs">Engenharia de Software</option>
+          </select>
+    </label>
+    <label class="turno">
+        <span>Turno:</span>
+        <select name="turno">
+            <option value="mat">Matutino</option>
+            <option value="vesp">Vespertino</option>
+            <option value="not">Noturno</option>
+        </select>
+    </label> 
+    <label class="cidade">
+        <span>Cidade:</span>
+        <select name="cidade">
+            <option value="mat">Araquari</option>
+            <option value="mat">Florianopolis</option>
+            <option value="vesp">Jaragua do Sul</option>
+            <option value="not">Joinville</option>
+        </select>
+    </label>
+    </div>
+    
+    <h1 class="title_login"> Login do Estudante </h1>
+    <div class="div3">
+            <label for="senha" class="login_label">
+                <span>Senha*:</span>
+                <input type="password" name="pwd" id="pwd" class="input">
+            </label>
+                
+            <label for="senha2" class="login_label"> 
+                <span>Confirmar senha*:</span>
+                <input type="password" name="pwd2" id="pwd2" class="input"> 
+            </label>
+                
+    </div>
+    </div>
+    
+    <div class="wrapper">
+        <div class="div4" class="lic">
+            <label for="lic"> 
+                <span>Aceito os Termos de Uso e política de privacidade</span>
+                <input type="checkbox" name="lic" id="lic" class="input--checkbox">
+           </label>
+    
+            <input type="reset" value="Limpar" id="reset">
+    
+            <button type="submit" name="submit" class="login_btn" disabled>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z"/>
+                </svg>
+            </button>
+    
+        </div>
+    
+    </div>
+    </form>
+    </div>
+ -->
+</main>
+</body>
+</html>
